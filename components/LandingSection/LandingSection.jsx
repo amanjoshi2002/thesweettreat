@@ -1,9 +1,10 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import LandingSectionStyle from "./LandingSection.style";
 
-function LandingSection(props) {
+function LandingSection() {
     return (
         <LandingSectionStyle className="relative w-full lg:p-28 p-16 bg-primary-bg flex flex-col lg:flex-row">
             <div className="heading w-full lg:w-2/3 lg:mt-20 mt-8">
@@ -22,7 +23,7 @@ function LandingSection(props) {
                 </a>
             </div>
             <div className="image w-1/6 hidden lg:block">
-                <img className={""} src="/images/cake2.jpg" alt=""/>
+                <Image src="/images/cake2.jpg" alt="Cake" width={500} height={500} />
             </div>
         </LandingSectionStyle>
     );

@@ -1,7 +1,6 @@
 import React from 'react';
-// import LoaderStyles from './Loader.style'
 
-function Loader(props) {
+function Loader() {
     return (
         <div>
             <h1>Cooking in progress..</h1>

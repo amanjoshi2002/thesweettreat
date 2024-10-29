@@ -34,7 +34,7 @@ export default function Incentives() {
                                 <div key={incentive.name} className="text-center sm:flex sm:text-left lg:block lg:text-center">
                                     <div className="sm:flex-shrink-0">
                                         <div className="flow-root">
-                                            <img className="w-20 h-20 mx-auto" src={incentive.imageSrc} alt="" />
+                                            <image className="w-20 h-20 mx-auto" src={incentive.imageSrc} alt="" />
                                         </div>
                                     </div>
                                     <div className="mt-3 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">

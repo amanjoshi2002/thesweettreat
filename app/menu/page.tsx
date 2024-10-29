@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Navbar from '@/components/Navbar/Navbar'; // Adjust the import path as necessary
+import Image from 'next/image';
 
 interface Photo {
     id: number;
@@ -54,7 +55,7 @@ const Menu: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {filteredPhotos.map(photo => (
                         <div key={photo.id} onClick={() => openModal(photo)} className="cursor-pointer">
-                            <img src={photo.src} alt={photo.alt} className="w-full h-64 object-cover rounded-lg" />
+                            <Image src={photo.src} alt={photo.alt} width={500} height={300} className="w-full h-64 object-cover rounded-lg" />
                         </div>
                     ))}
                 </div>
@@ -63,7 +64,7 @@ const Menu: React.FC = () => {
                     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
                         <div className="bg-white p-4 rounded-lg max-w-lg w-full">
                             <button onClick={closeModal} className="float-right text-xl font-bold">&times;</button>
-                            <img src={selectedPhoto.src} alt={selectedPhoto.alt} className="w-full h-auto" />
+                            <Image src={selectedPhoto.src} alt={selectedPhoto.alt} width={500} height={300} className="w-full h-auto" />
                             <p className="mt-4">{selectedPhoto.description}</p>
                         </div>
                     </div>
