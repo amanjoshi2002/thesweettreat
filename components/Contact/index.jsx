@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 export default function Contact() {
     return (
         <div className="relative bg-white">
@@ -20,18 +24,36 @@ export default function Contact() {
                                     <p>Springfield, OR 12345</p>
                                 </dd>
                             </div>
-                            <div className="mt-6">
+                            <div className="mt-6 text-gray-600">
                                 <dt className="sr-only">Phone number</dt>
                                 <dd className="flex">
-                                    <span className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true">📞</span>
+                                    <FontAwesomeIcon icon={faPhone} className="h-6 w-6" />
                                     <span className="ml-3">+91 99009 90099</span>
                                 </dd>
                             </div>
-                            <div className="mt-3">
+                            <div className="mt-3 text-gray-600">
                                 <dt className="sr-only">Email</dt>
                                 <dd className="flex">
-                                    <span className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true">✉️</span>
+                                    <FontAwesomeIcon icon={faEnvelope} className="h-6 w-6" />
                                     <span className="ml-3">me@chirag.codes</span>
+                                </dd>
+                            </div>
+                            <div className="mt-3 text-gray-600">
+                                <dt className="sr-only">Instagram</dt>
+                                <dd className="flex">
+                                    <FontAwesomeIcon icon={faInstagram} className="h-6 w-6" />
+                                    <a href="https://instagram.com/yourprofile" className="ml-3 hover:text-indigo-500">
+                                        @yourprofile
+                                    </a>
+                                </dd>
+                            </div>
+                            <div className="mt-3 text-gray-600">
+                                <dt className="sr-only">WhatsApp</dt>
+                                <dd className="flex">
+                                    <FontAwesomeIcon icon={faWhatsapp} className="h-6 w-6" />
+                                    <a href="https://wa.me/919900990099" className="ml-3 hover:text-indigo-500">
+                                        Chat on WhatsApp
+                                    </a>
                                 </dd>
                             </div>
                         </dl>

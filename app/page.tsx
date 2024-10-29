@@ -31,11 +31,12 @@ export default function Home() {
         <Contact />
         <a
           href="https://wa.me/your-n"
-          className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg"
+          className="fixed bottom-4 right-4 bg-green-500 text-white p-5 rounded-full shadow-lg flex items-center justify-center"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ width: '60px', height: '60px' }}
         >
-          <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+          <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: '24px' }} />
         </a>
       </main>
     </div>

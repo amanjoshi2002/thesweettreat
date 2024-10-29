@@ -48,11 +48,7 @@ function Index(props) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="m-5 bg-white">
-                                <p className="text-center cursor-pointer hover:scale-110 text-lg font-medium text-green-400">
-                                    Buy Me →
-                                </p>
-                            </div>
+                           
 
                         </div>
                     ))}
