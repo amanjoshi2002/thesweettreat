@@ -3,19 +3,19 @@ import Image from 'next/image';
 
 const cakes = [
     {
-        title: 'Chocolate Cake',
-        description: 'Best cake for birthday parties and chocolate lovers.',
-        imageUrl: '/images/cake1.webp',
-    },
-    {
-        title: 'Velvet Cake',
-        description: 'Best cake for special occasions and parties.',
-        imageUrl: '/images/cake2.webp',
+        title: 'Black Forest Cake',
+        description: 'A luxurious combination of rich chocolate layers, fresh cherries, and whipped cream. Perfect for birthday celebrations and chocolate enthusiasts.',
+        imageUrl: '/images/black-forest-cake.jpg',
     },
     {
         title: 'Fruit Cake',
-        description: 'Best cake for special occasions, parties and Fruit lovers.',
-        imageUrl: '/images/cake3.webp',
+        description: 'Loaded with premium dried fruits and nuts, soaked in natural fruit juices. An elegant choice for weddings and special gatherings.',
+        imageUrl: '/images/fruit-cake.jpg',
+    },
+    {
+        title: 'Vanilla Cake',
+        description: 'Light, fluffy, and delicately flavored with pure Madagascar vanilla. Ideal for any occasion with its classic, timeless taste.',
+        imageUrl: '/images/vanilla-cake.jpg',
     },
 ];
 

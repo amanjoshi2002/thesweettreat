@@ -36,7 +36,7 @@ export default function Contact() {
                 body: JSON.stringify({
                     ...formData,
                     honeypot: '',
-                    accessKey: '7256395e-dfe5-4cc7-849f-4bb10ea53998',
+                    accessKey: 'c8419351-c1ee-4867-9c47-a0bb22408406',
                     subject: 'Contact us from - example.com',
                     replyTo: '@',
                     redirectTo: 'https://example.com/contact/success'
