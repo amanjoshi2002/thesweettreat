@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCake } from '@fortawesome/free-solid-svg-icons';
 import LandingSectionStyle from "./LandingSection.style";
 
 function LandingSection() {
@@ -11,9 +13,12 @@ function LandingSection() {
                 <h1 className="lg:text-7xl text-4xl mb-5 font-medium">
                     Designer <br /> Cakes <br /> for Every Occasion
                 </h1>
-                <h2 className="lg:text-5xl text-3xl subtitle font-light mb-8">
+                <h2 className="lg:text-5xl text-3xl subtitle font-light mb-3">
                     Crafted with Love
                 </h2>
+                <p className="lg:text-2xl text-xl text-gray-600 mb-8 flex items-center gap-2">
+                    The Story in every treat! <FontAwesomeIcon icon={faCake} className="text-pink-400" />
+                </p>
 
                 <a
                     href="/menu"
