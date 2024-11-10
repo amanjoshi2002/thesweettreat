@@ -8,15 +8,19 @@ import LandingSectionStyle from "./LandingSection.style";
 
 function LandingSection() {
     return (
-        <LandingSectionStyle className="relative w-full lg:p-28 p-16 bg-primary-bg flex flex-col lg:flex-row">
-            <div className="heading w-full lg:w-2/3 lg:mt-20 mt-8">
-                <h1 className="lg:text-7xl text-4xl mb-5 font-medium">
-                    Designer <br /> Cakes <br /> for Every Occasion
-                </h1>
-                <h2 className="lg:text-5xl text-3xl subtitle font-light mb-3">
-                    Crafted with Love
-                </h2>
-                <p className="lg:text-2xl text-xl text-gray-600 mb-8 flex items-center gap-2">
+        <LandingSectionStyle className="relative w-full lg:pt-2 p-16 bg-primary-bg flex flex-col items-center">
+            <div className="heading w-full flex flex-col items-center">
+                <div className="mb-2">
+                    <Image 
+                        src="/images/logo.png"
+                        alt="The Sweet Treat Logo"
+                        width={500}
+                        height={500}
+                        className="lg:w-[500px] w-[300px]"
+                        priority
+                    />
+                </div>
+                <p className="lg:text-2xl text-xl text-gray-600 mb-3 flex items-center gap-2">
                     The Story in every treat! <FontAwesomeIcon icon={faCake} className="text-pink-400" />
                 </p>
 
@@ -26,9 +30,6 @@ function LandingSection() {
                 >
                     Explore Menu
                 </a>
-            </div>
-            <div className="image w-1/6 hidden lg:block">
-                <Image src="/images/cake2.jpg" alt="Cake" width={500} height={500} />
             </div>
         </LandingSectionStyle>
     );
